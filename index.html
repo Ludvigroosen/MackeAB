@@ -9,8 +9,8 @@
   <style>
     .dark {
       --tw-bg-opacity: 1;
-      background-color: rgba(255, 228, 235, var(--tw-bg-opacity)); /* soft pink */
-      color: #4b1e2f; /* dark reddish-brown */
+      background-color: rgba(255, 228, 235, var(--tw-bg-opacity));
+      color: #4b1e2f;
     }
 
     .dark a {
@@ -68,10 +68,16 @@
     <section>
       <h2 class="text-2xl font-semibold mb-4">Vårt team</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Replace images as needed -->
+
+        <!-- Roy -->
         <div class="bg-white rounded-2xl shadow-md p-6">
           <div class="flex items-center gap-4 mb-4">
-            <img src="images/roy.png" alt="Roy Bensindahl" class="w-12 h-12 rounded-full object-cover" />
+            <img
+              src="images/roy.png"
+              alt="Roy Bensindahl"
+              title="“Jag har hört vad du sa, men jag tänker ändå stå kvar här.”"
+              class="w-12 h-12 rounded-full object-cover transition-transform duration-200 hover:scale-110 hover:ring-2 hover:ring-pink-400 cursor-pointer"
+            />
             <div>
               <h3 class="text-xl font-semibold">Roy Bensindahl</h3>
               <p class="text-sm text-gray-500">Verkställande Tankchef</p>
@@ -83,9 +89,15 @@
           </div>
         </div>
 
+        <!-- Roger -->
         <div class="bg-white rounded-2xl shadow-md p-6">
           <div class="flex items-center gap-4 mb-4">
-            <img src="images/roger.png" alt="Roger Dieselsson" class="w-12 h-12 rounded-full object-cover" />
+            <img
+              src="images/roger.png"
+              alt="Roger Dieselsson"
+              title="“Allt går att backa. Utom ansvar.”"
+              class="w-12 h-12 rounded-full object-cover transition-transform duration-200 hover:scale-110 hover:ring-2 hover:ring-pink-400 cursor-pointer"
+            />
             <div>
               <h3 class="text-xl font-semibold">Roger Dieselsson</h3>
               <p class="text-sm text-gray-500">Vice VD för Vänsterbackning</p>
@@ -97,9 +109,15 @@
           </div>
         </div>
 
+        <!-- Edvard -->
         <div class="bg-white rounded-2xl shadow-md p-6">
           <div class="flex items-center gap-4 mb-4">
-            <img src="images/edvard.png" alt="Edvard Svarthammar" class="w-12 h-12 rounded-full object-cover" />
+            <img
+              src="images/edvard.png"
+              alt="Edvard Svarthammar"
+              title="“Har du provat att inte fråga mig?”"
+              class="w-12 h-12 rounded-full object-cover transition-transform duration-200 hover:scale-110 hover:ring-2 hover:ring-pink-400 cursor-pointer"
+            />
             <div>
               <h3 class="text-xl font-semibold">Edvard Svarthammar</h3>
               <p class="text-sm text-gray-500">IT-ansvarig (ingen vet varför)</p>
@@ -111,9 +129,15 @@
           </div>
         </div>
 
+        <!-- Sten -->
         <div class="bg-white rounded-2xl shadow-md p-6">
           <div class="flex items-center gap-4 mb-4">
-            <img src="images/sten.png" alt="Sten Gustavsson" class="w-12 h-12 rounded-full object-cover" />
+            <img
+              src="images/sten.png"
+              alt="Sten Gustavsson"
+              title="“Jag var här förra veckan. Samma ärende. Fortfarande arg.”"
+              class="w-12 h-12 rounded-full object-cover transition-transform duration-200 hover:scale-110 hover:ring-2 hover:ring-pink-400 cursor-pointer"
+            />
             <div>
               <h3 class="text-xl font-semibold">Sten Gustavsson</h3>
               <p class="text-sm text-gray-500">Klientrepresentant</p>
@@ -146,18 +170,17 @@
       </div>
     </section>
 
-<!-- Contact -->
-<section>
-  <h2 class="text-2xl font-semibold mb-2">Kontakta oss (eller försök åtminstone)</h2>
-  <form class="space-y-4 max-w-md" onsubmit="event.preventDefault(); window.location.href='oops.html';">
-    <input placeholder="Ditt namn" class="w-full p-2 border border-gray-300 rounded" />
-    <input placeholder="Din e-post" class="w-full p-2 border border-gray-300 rounded" />
-    <textarea placeholder="Skriv ditt ärende här..." class="w-full p-2 border border-gray-300 rounded"></textarea>
-    <button class="bg-gray-300 text-white px-4 py-2 rounded">Skicka (funkar inte)</button>
-  </form>
-  <p class="text-sm text-gray-500 mt-2">Formuläret är mest för syns skull.</p>
-</section>
-
+    <!-- Contact -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Kontakta oss (eller försök åtminstone)</h2>
+      <form class="space-y-4 max-w-md" onsubmit="event.preventDefault(); window.location.href='oops.html';">
+        <input placeholder="Ditt namn" class="w-full p-2 border border-gray-300 rounded" />
+        <input placeholder="Din e-post" class="w-full p-2 border border-gray-300 rounded" />
+        <textarea placeholder="Skriv ditt ärende här..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+        <button class="bg-gray-300 text-white px-4 py-2 rounded">Skicka (funkar inte)</button>
+      </form>
+      <p class="text-sm text-gray-500 mt-2">Formuläret är mest för syns skull.</p>
+    </section>
 
     <!-- Careers -->
     <section>
