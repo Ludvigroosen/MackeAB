@@ -1,1 +1,126 @@
-Hello World
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Macken & Macken AB</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <div class="p-6 max-w-5xl mx-auto space-y-12">
+
+    <!-- Header -->
+    <section>
+      <h1 class="text-4xl font-bold mb-4">Macken & Macken AB</h1>
+      <p class="text-lg italic">"Det går bra nu"… men ingen vet riktigt varför.</p>
+    </section>
+
+    <!-- About -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Om oss</h2>
+      <p>
+        På Macken & Macken AB tror vi på att göra så lite som möjligt, så effektivt som möjligt.
+        Med över 40 års erfarenhet av att stå i luckan, titta på bilar och undvika ansvar,
+        har vi byggt ett rykte ingen riktigt kan förklara.
+      </p>
+    </section>
+
+    <!-- Team -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Vårt team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Repeat for each team member -->
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-gray-200 rounded-full font-semibold">RB</div>
+            <div>
+              <h3 class="text-xl font-semibold">Roy Bensindahl</h3>
+              <p class="text-sm text-gray-500">Verkställande Tankchef</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">“Jag har hört vad du sa, men jag tänker ändå stå kvar här.”</p>
+          <div class="flex items-center text-sm text-blue-600 gap-2">
+            📧 <a href="mailto:roy.bensindahl@mackenmacken.se">roy.bensindahl@mackenmacken.se</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-gray-200 rounded-full font-semibold">RD</div>
+            <div>
+              <h3 class="text-xl font-semibold">Roger Dieselsson</h3>
+              <p class="text-sm text-gray-500">Vice VD för Vänsterbackning</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">“Allt går att backa. Utom ansvar.”</p>
+          <div class="flex items-center text-sm text-blue-600 gap-2">
+            📧 <a href="mailto:roger.dieselsson@mackenmacken.se">roger.dieselsson@mackenmacken.se</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-gray-200 rounded-full font-semibold">ES</div>
+            <div>
+              <h3 class="text-xl font-semibold">Edvard Svarthammar</h3>
+              <p class="text-sm text-gray-500">IT-ansvarig (ingen vet varför)</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">“Har du provat att inte fråga mig?”</p>
+          <div class="flex items-center text-sm text-blue-600 gap-2">
+            📧 <a href="mailto:edvard.svarthammar@mackenmacken.se">edvard.svarthammar@mackenmacken.se</a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-gray-200 rounded-full font-semibold">SG</div>
+            <div>
+              <h3 class="text-xl font-semibold">Sten Gustavsson</h3>
+              <p class="text-sm text-gray-500">Klientrepresentant</p>
+            </div>
+          </div>
+          <p class="text-sm mb-4">“Jag var här förra veckan. Samma ärende. Fortfarande arg.”</p>
+          <div class="flex items-center text-sm text-blue-600 gap-2">
+            📧 <a href="mailto:sten.gustavsson@mackenmacken.se">sten.gustavsson@mackenmacken.se</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Kundcitat (vi har hört dem förut)</h2>
+      <div class="space-y-4">
+        <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
+          <p class="font-semibold">Göran från Götet</p>
+          <p class="text-sm">“Jag har varit kund i tre år. Inget har hänt. Fantastiskt!”</p>
+        </div>
+        <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
+          <p class="font-semibold">Birgitta med bilen</p>
+          <p class="text-sm">“Jag lämnade in bilen 1994. De sa 'vi ringer'. De gjorde aldrig det.”</p>
+        </div>
+        <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
+          <p class="font-semibold">Lennart Lugn</p>
+          <p class="text-sm">“Fick fel nycklar. Fel bil. Rätt upplevelse.”</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Kontakta oss (eller försök åtminstone)</h2>
+      <form class="space-y-4 max-w-md">
+        <input placeholder="Ditt namn" disabled class="w-full p-2 border border-gray-300 rounded" />
+        <input placeholder="Din e-post" disabled class="w-full p-2 border border-gray-300 rounded" />
+        <textarea placeholder="Skriv ditt ärende här..." disabled class="w-full p-2 border border-gray-300 rounded"></textarea>
+        <button disabled class="bg-gray-300 text-white px-4 py-2 rounded">Skicka (funkar inte)</button>
+      </form>
+      <p class="text-sm text-gray-500 mt-2">Formuläret är mest för syns skull.</p>
+    </section>
+
+    <!-- Careers -->
+    <section>
+      <h2 class="text-2xl font-semibold mb
