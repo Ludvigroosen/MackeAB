@@ -1,201 +1,153 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Macken & Macken AB</title>
-  <link rel="icon" href="favicon.ico" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .dark {
-      --tw-bg-opacity: 1;
-      background-color: rgba(255, 228, 235, var(--tw-bg-opacity));
-      color: #4b1e2f;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macken & Macken AB</title>
+    <link rel="icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .dark {
+        --tw-bg-opacity: 1;
+        background-color: rgba(255, 228, 235, var(--tw-bg-opacity));
+        color: #4b1e2f;
+      }
+      .dark a {
+        color: #9b1c4c;
+      }
+      .dark input,
+      .dark textarea {
+        background-color: #fff0f5;
+        border-color: #e0aabf;
+        color: #4b1e2f;
+      }
+      .dark button {
+        background-color: #d97a9d;
+        color: white;
+      }
+      .dark footer {
+        color: #a9445d;
+      }
+    </style>
+    <script>
+      function toggleDark() {
+        document.documentElement.classList.toggle("dark");
+      }
+    </script>
+  </head>
+  <body class="transition-colors">
+    <div class="p-6 max-w-5xl mx-auto space-y-12">
+      <section class="text-center">
+        <img
+          src="images/macken.png"
+          alt="Macken & Macken logo"
+          class="w-24 mx-auto mb-4"
+        />
+        <h1 class="text-4xl font-bold mb-2">Macken & Macken AB</h1>
+        <p class="text-lg italic">
+          "Det går bra nu"… men ingen vet riktigt varför.
+        </p>
+      </section>
 
-    .dark a {
-      color: #9b1c4c;
-    }
+      <div class="text-right">
+        <button
+          onclick="toggleDark()"
+          class="text-sm text-blue-600 hover:underline"
+        >
+          🌃 Växla mörkt läge
+        </button>
+      </div>
 
-    .dark input,
-    .dark textarea {
-      background-color: #fff0f5;
-      border-color: #e0aabf;
-      color: #4b1e2f;
-    }
+      <section>
+        <h2 class="text-2xl font-semibold mb-2">Om oss</h2>
+        <p>
+          På Macken & Macken AB tror vi på att göra så lite som möjligt, så effektivt
+          som möjligt. Med över 40 års erfarenhet av att stå i luckan, titta på bilar
+          och undvika ansvar, har vi byggt ett rykte ingen riktigt kan förklara.
+        </p>
+      </section>
 
-    .dark button {
-      background-color: #d97a9d;
-      color: white;
-    }
+      <!-- Team injected below by script -->
 
-    .dark footer {
-      color: #a9445d;
-    }
-  </style>
-  <script>
-    function toggleDark() {
-      document.documentElement.classList.toggle('dark');
-    }
-  </script>
-</head>
-<body class="transition-colors">
-  <div class="p-6 max-w-5xl mx-auto space-y-12">
+      <!-- Placeholder to inject modal -->
+      <div id="modal-placeholder"></div>
 
-    <!-- Logo + Header -->
-    <section class="text-center">
-      <img src="images/macken.png" alt="Macken & Macken logo" class="w-24 mx-auto mb-4" />
-      <h1 class="text-4xl font-bold mb-2">Macken & Macken AB</h1>
-      <p class="text-lg italic">"Det går bra nu"… men ingen vet riktigt varför.</p>
-    </section>
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">
+          Kundcitat (vi har hört dem förut)
+        </h2>
+        <div class="space-y-4">
+          <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
+            <p class="font-semibold">Göran från Götet</p>
+            <p class="text-sm">
+              “Jag har varit kund i tre år. Inget har hänt. Fantastiskt!”
+            </p>
+          </div>
+          <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
+            <p class="font-semibold">Birgitta med bilen</p>
+            <p class="text-sm">
+              “Jag lämnade in bilen 1994. De sa 'vi ringer'. De gjorde aldrig det.”
+            </p>
+          </div>
+          <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
+            <p class="font-semibold">Lennart Lugn</p>
+            <p class="text-sm">
+              “Fick fel nycklar. Fel bil. Rätt upplevelse.”
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <!-- Dark mode toggle -->
-    <div class="text-right">
-      <button onclick="toggleDark()" class="text-sm text-blue-600 hover:underline">🌓 Växla mörkt läge</button>
+      <section>
+        <h2 class="text-2xl font-semibold mb-2">
+          Kontakta oss (eller försök åtminstone)
+        </h2>
+        <form
+          class="space-y-4 max-w-md"
+          onsubmit="event.preventDefault(); window.location.href='oops.html';"
+        >
+          <input
+            placeholder="Ditt namn"
+            class="w-full p-2 border border-gray-300 rounded"
+          />
+          <input
+            placeholder="Din e-post"
+            class="w-full p-2 border border-gray-300 rounded"
+          />
+          <textarea
+            placeholder="Skriv ditt ärende här..."
+            class="w-full p-2 border border-gray-300 rounded"
+          ></textarea>
+          <button class="bg-gray-300 text-white px-4 py-2 rounded">
+            Skicka (funkar inte)
+          </button>
+        </form>
+        <p class="text-sm text-gray-500 mt-2">
+          Formuläret är mest för syns skull.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-semibold mb-2">Karriär</h2>
+        <p>
+          Vi letar alltid efter personer som inte riktigt vet vad de gör. Har du
+          en bakgrund inom "lite av varje" och föredrar raster framför resultat –
+          hör inte av dig. Vi hittar dig ändå.
+        </p>
+        <button
+          class="mt-4 bg-gray-300 text-white px-4 py-2 rounded"
+          disabled
+        >
+          Sök ändå (nej men alltså på riktigt, gör inte det)
+        </button>
+      </section>
+
+      <footer class="mt-16 text-center text-sm text-gray-500 dark:text-gray-400">
+        &copy; 2025 Macken & Macken AB. Alla rättigheter fördröjda.
+      </footer>
     </div>
 
-    <!-- About -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Om oss</h2>
-      <p>
-        På Macken & Macken AB tror vi på att göra så lite som möjligt, så effektivt som möjligt.
-        Med över 40 års erfarenhet av att stå i luckan, titta på bilar och undvika ansvar,
-        har vi byggt ett rykte ingen riktigt kan förklara.
-      </p>
-    </section>
-
-    <!-- Team -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Vårt team</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-        <!-- Roy -->
-        <div class="bg-white rounded-2xl shadow-md p-6">
-          <div class="flex items-center gap-4 mb-4">
-            <img
-              src="images/roy.png"
-              alt="Roy Bensindahl"
-              title="“Jag har hört vad du sa, men jag tänker ändå stå kvar här.”"
-              class="w-12 h-12 rounded-full object-cover transition-transform duration-200 hover:scale-110 hover:ring-2 hover:ring-pink-400 cursor-pointer"
-            />
-            <div>
-              <h3 class="text-xl font-semibold">Roy Bensindahl</h3>
-              <p class="text-sm text-gray-500">Verkställande Tankchef</p>
-            </div>
-          </div>
-          <p class="text-sm mb-4">“Jag har hört vad du sa, men jag tänker ändå stå kvar här.”</p>
-          <div class="flex items-center text-sm text-blue-600 gap-2">
-            📧 <a href="mailto:roy.bensindahl@mackenmacken.se">roy.bensindahl@mackenmacken.se</a>
-          </div>
-        </div>
-
-        <!-- Roger -->
-        <div class="bg-white rounded-2xl shadow-md p-6">
-          <div class="flex items-center gap-4 mb-4">
-            <img
-              src="images/roger.png"
-              alt="Roger Dieselsson"
-              title="“Allt går att backa. Utom ansvar.”"
-              class="w-12 h-12 rounded-full object-cover transition-transform duration-200 hover:scale-110 hover:ring-2 hover:ring-pink-400 cursor-pointer"
-            />
-            <div>
-              <h3 class="text-xl font-semibold">Roger Dieselsson</h3>
-              <p class="text-sm text-gray-500">Vice VD för Vänsterbackning</p>
-            </div>
-          </div>
-          <p class="text-sm mb-4">“Allt går att backa. Utom ansvar.”</p>
-          <div class="flex items-center text-sm text-blue-600 gap-2">
-            📧 <a href="mailto:roger.dieselsson@mackenmacken.se">roger.dieselsson@mackenmacken.se</a>
-          </div>
-        </div>
-
-        <!-- Edvard -->
-        <div class="bg-white rounded-2xl shadow-md p-6">
-          <div class="flex items-center gap-4 mb-4">
-            <img
-              src="images/edvard.png"
-              alt="Edvard Svarthammar"
-              title="“Har du provat att inte fråga mig?”"
-              class="w-12 h-12 rounded-full object-cover transition-transform duration-200 hover:scale-110 hover:ring-2 hover:ring-pink-400 cursor-pointer"
-            />
-            <div>
-              <h3 class="text-xl font-semibold">Edvard Svarthammar</h3>
-              <p class="text-sm text-gray-500">IT-ansvarig (ingen vet varför)</p>
-            </div>
-          </div>
-          <p class="text-sm mb-4">“Har du provat att inte fråga mig?”</p>
-          <div class="flex items-center text-sm text-blue-600 gap-2">
-            📧 <a href="mailto:edvard.svarthammar@mackenmacken.se">edvard.svarthammar@mackenmacken.se</a>
-          </div>
-        </div>
-
-        <!-- Sten -->
-        <div class="bg-white rounded-2xl shadow-md p-6">
-          <div class="flex items-center gap-4 mb-4">
-            <img
-              src="images/sten.png"
-              alt="Sten Gustavsson"
-              title="“Jag var här förra veckan. Samma ärende. Fortfarande arg.”"
-              class="w-12 h-12 rounded-full object-cover transition-transform duration-200 hover:scale-110 hover:ring-2 hover:ring-pink-400 cursor-pointer"
-            />
-            <div>
-              <h3 class="text-xl font-semibold">Sten Gustavsson</h3>
-              <p class="text-sm text-gray-500">Klientrepresentant</p>
-            </div>
-          </div>
-          <p class="text-sm mb-4">“Jag var här förra veckan. Samma ärende. Fortfarande arg.”</p>
-          <div class="flex items-center text-sm text-blue-600 gap-2">
-            📧 <a href="mailto:sten.gustavsson@mackenmacken.se">sten.gustavsson@mackenmacken.se</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Kundcitat (vi har hört dem förut)</h2>
-      <div class="space-y-4">
-        <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
-          <p class="font-semibold">Göran från Götet</p>
-          <p class="text-sm">“Jag har varit kund i tre år. Inget har hänt. Fantastiskt!”</p>
-        </div>
-        <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
-          <p class="font-semibold">Birgitta med bilen</p>
-          <p class="text-sm">“Jag lämnade in bilen 1994. De sa 'vi ringer'. De gjorde aldrig det.”</p>
-        </div>
-        <div class="bg-red-50 border border-red-200 p-4 rounded-lg">
-          <p class="font-semibold">Lennart Lugn</p>
-          <p class="text-sm">“Fick fel nycklar. Fel bil. Rätt upplevelse.”</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Kontakta oss (eller försök åtminstone)</h2>
-      <form class="space-y-4 max-w-md" onsubmit="event.preventDefault(); window.location.href='oops.html';">
-        <input placeholder="Ditt namn" class="w-full p-2 border border-gray-300 rounded" />
-        <input placeholder="Din e-post" class="w-full p-2 border border-gray-300 rounded" />
-        <textarea placeholder="Skriv ditt ärende här..." class="w-full p-2 border border-gray-300 rounded"></textarea>
-        <button class="bg-gray-300 text-white px-4 py-2 rounded">Skicka (funkar inte)</button>
-      </form>
-      <p class="text-sm text-gray-500 mt-2">Formuläret är mest för syns skull.</p>
-    </section>
-
-    <!-- Careers -->
-    <section>
-      <h2 class="text-2xl font-semibold mb-2">Karriär</h2>
-      <p>
-        Vi letar alltid efter personer som inte riktigt vet vad de gör. Har du en bakgrund inom "lite av varje"
-        och föredrar raster framför resultat – hör inte av dig. Vi hittar dig ändå.
-      </p>
-      <button class="mt-4 bg-gray-300 text-white px-4 py-2 rounded" disabled>Sök ändå (nej men alltså på riktigt, gör inte det)</button>
-    </section>
-
-    <!-- Footer -->
-    <footer class="mt-16 text-center text-sm text-gray-500 dark:text-gray-400">
-      &copy; 2025 Macken & Macken AB. Alla rättigheter fördröjda.
-    </footer>
-  </div>
-</body>
+    <!-- Injected Team Modal + JS -->
+    <script src="teamModal.js"></script>
+  </body>
 </html>
