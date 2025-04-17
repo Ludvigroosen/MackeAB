@@ -44,7 +44,7 @@ const teamMembers = [
       quote: "Jag hinner – om ingen stör mig med nåt oviktigt. Som IT-support.",
       story: "Maud började egentligen bara hjälpa till med att hämta filterkaffe och ställa frågor som 'har ni provat att starta om den?'. Tio år senare är det hon som håller ihop hela Macken – inte för att hon ville, utan för att någon var tvungen. Hon vet var nycklarna är, när leveranser kommer trots att ingen har sagt något, och exakt hur man får Roy att sluta prata med kunder som bara 'tittar runt'.",
       image: "images/maud.png"
-    }
+    },
     {
       id: "gunnar",
       name: "Gunnar Ekblad",
