@@ -45,6 +45,15 @@ const teamMembers = [
       story: "Maud började egentligen bara hjälpa till med att hämta filterkaffe och ställa frågor som 'har ni provat att starta om den?'. Tio år senare är det hon som håller ihop hela Macken – inte för att hon ville, utan för att någon var tvungen. Hon vet var nycklarna är, när leveranser kommer trots att ingen har sagt något, och exakt hur man får Roy att sluta prata med kunder som bara 'tittar runt'.",
       image: "images/maud.png"
     }
+    {
+      id: "gunnar",
+      name: "Gunnar Ekblad",
+      title: "Möjligen ekonomiansvarig",
+      email: "Gunnar.Ekblad@mackenmacken.se",
+      quote: "Det står här att vi har ett avtal på Umbrella. Vem tog med paraplyet?",
+      story: "Gunnar har ett skrivbord i förrådet mellan reservdelar och kvittopärmen. Han säger att han ansvarar för budgeten – men ingen har riktigt bekräftat det'.",
+      image: "images/gunnar.png"
+    }
   ];
   
   function injectTeamSection() {
